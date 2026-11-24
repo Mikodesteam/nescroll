@@ -53,9 +53,17 @@ A native iPhone and iPad app that opens social sites in calm browser tabs with t
 - **Three-screen onboarding**
 - **7-day statistics chart**
 
+## How it works
+
+A technical case study of the architecture, one end-to-end flow, the key engineering decisions and how you would build something like this: **[docs/HOW-IT-WORKS.md](docs/HOW-IT-WORKS.md)**.
+
 ## A look at the code
 
-**Safe remote filter updates**: [`snippets/RemoteRules.swift`](snippets/RemoteRules.swift). When a social site changes its pages, the app can pick up new filter rules from a plain JSON file. Each rule is validated on the device (length limits, no CSS blocks, only same-site redirects, valid regexes), so a bad file can never break the app.
+Real excerpts from the source, shown for illustration:
+
+- **Safe remote filter updates** ([`snippets/RemoteRules.swift`](snippets/RemoteRules.swift)): When a social site changes its pages, the app can pick up new filter rules from a plain JSON file. Each rule is validated on the device (length limits, no CSS blocks, only same-site redirects, valid regexes), so a bad file can never break the app.
+- **Hide a feed item by its label, safely** ([`snippets/page_label_sweep.js`](snippets/page_label_sweep.js)): A page script hides items marked with exact texts such as Suggested for you, but only elements that look like a post. Anything that contains navigation, a header or an input is never hidden.
+- **Quiet hours that cross midnight** ([`snippets/lock_quiet_hours.swift`](snippets/lock_quiet_hours.swift)): The daily Screen Time window handles ranges like 22:00 to 07:00, and the shield stays up while either a timed lock or the quiet window applies. The math is pure and unit tested.
 
 ## Requirements (full version)
 
