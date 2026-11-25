@@ -8,6 +8,8 @@
   <b>Social browser without endless feeds, with a screen-time lock (SwiftUI, iOS).</b>
 </p>
 
+<p align="center"><sub>SwiftUI iOS app source code · social media without Reels & Shorts · Screen Time lock · digital wellbeing</sub></p>
+
 <p align="center">
   <a href="https://nescroll.mikodes.com/docs/"><b>Docs</b></a> ·
   <a href="https://nescroll.mikodes.com/"><b>Website</b></a> ·
@@ -75,6 +77,20 @@ Real excerpts from the source, shown for illustration:
 - Optional: XcodeGen 2.x
 
 Not included: Apple Developer Program membership; Apple Family Controls; App Store publishing and review outcome; Hosting for the optional rules.json; Any affiliation with or permission from Instagram, Facebook, Meta, YouTube or Google.
+
+## FAQ
+
+**Is this the full source code?**  
+No. This repository is a showcase with screenshots, a technical case study and real code excerpts. The complete Nescroll source code is sold at [store.mikodes.com/p/nescroll](https://store.mikodes.com/p/nescroll/).
+
+**What is Nescroll built with?**  
+Swift.
+
+**Can I try it before buying?**  
+Look at the screenshots and the [case study](docs/HOW-IT-WORKS.md), or ask a question at [mikodes.com/support](https://mikodes.com/support).
+
+**Do I get help with the installation?**  
+Free setup help is included with the store purchase; questions go to [mikodes.com/support](https://mikodes.com/support).
 
 ## Get the full source code
 
